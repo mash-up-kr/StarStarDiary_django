@@ -123,3 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 업로드한 파일의 위치값의 prefix
+MEDIA_URL = '/media/'
+
+# 실제로 업로드 될 위치
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

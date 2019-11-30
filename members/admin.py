@@ -9,5 +9,6 @@ class UserAdmin(BaseUserAdmin):
         ('추가필드', {'fields': (
             'nickname',
             'img_profile',
+            'attachment',
         )}),
     ) + BaseUserAdmin.fieldsets
