@@ -5,4 +5,9 @@ from members.models import User
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
-    pass
+    fieldsets = (
+        ('추가필드', {'fields': (
+            'nickname',
+            'img_profile',
+        )}),
+    ) + BaseUserAdmin.fieldsets
